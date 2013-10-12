@@ -36,4 +36,4 @@ class MyRobot : public SimpleRobot {
   
 };
 
-START_ROBOT_CLASS(MyRobot());
+START_ROBOT_CLASS(MyRobot;
