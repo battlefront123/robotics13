@@ -24,7 +24,7 @@ class MyRobot : public SimpleRobot {
     leftVic1.Set(0.5);
     leftVic2.Set(0.5);
     rightVic2.Set(-0.5);
-    rightVid2.Set(-0.5);
+    rightVic2.Set(-0.5);
     
     Wait(2.0);
     
@@ -36,4 +36,4 @@ class MyRobot : public SimpleRobot {
   
 };
 
-START_ROBOT_CLASS(MyRobot;
+START_ROBOT_CLASS(MyRobot);
