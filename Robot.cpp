@@ -35,7 +35,7 @@ class MyRobot : public SimpleRobot {
     rightVic1.Set(0.0);
     rightVic2.Set(0.0);
 
-    Wait(0.5);
+    Wait(2.0);
     
     leftVic1.Set(0.5);
     leftVic2.Set(0.5);
@@ -49,7 +49,7 @@ class MyRobot : public SimpleRobot {
     rightVic1.Set(0.0);
     rightVic2.Set(0.0);
     
-    Wait(0.5);
+    Wait(2.0);
     
     leftVic1.Set(-0.3);
     leftVic2.Set(-0.3);
