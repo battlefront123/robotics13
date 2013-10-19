@@ -1,4 +1,5 @@
 #include "WPILib.h"
+#include "Constants.h"
 #define PORT_DRIVE_VIC_1 5
 #define PORT_DRIVE_VIC_2 10
 #define PORT_DRIVE_VIC_3 2
@@ -12,15 +13,23 @@ class MyRobot : public SimpleRobot {
   Victor leftVic2;
   Victor rightVic1;
   Victor rightVic2;
-  
+
   public:
   MyRobot():
     leftVic1(PORT_DRIVE_VIC_1), 
     leftVic2(PORT_DRIVE_VIC_2),
     rightVic1(PORT_DRIVE_VIC_2),
     rightVic2(PORT_DRIVE_VIC_2){}
-    
+
   void Autonomous(){
+
+    leftVic1.Set(0.3);
+    leftVic2.Set(0.3);
+    rightVic1.Set(0.3);
+    rightVic2.Set(0.3);
+
+    Wait(2.0);
+
     leftVic1.Set(0.5);
     leftVic2.Set(0.5);
     rightVic2.Set(-0.5);
