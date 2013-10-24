@@ -34,8 +34,21 @@ class MyRobot : public IterativeRobot {
     leftVic2.Set(0.3);
     rightVic1.Set(0.3);
     rightVic2.Set(0.3);
+<<<<<<< HEAD
     }
     if(t.Get() > 2.0 && t.Get < 4.0){
+=======
+
+    Wait(2.0);
+    
+    leftVic1.Set(0.0);
+    leftVic2.Set(0.0);
+    rightVic1.Set(0.0);
+    rightVic2.Set(0.0);
+
+    Wait(2.0);
+    
+>>>>>>> 0cbaf8c330fa68e95d389bafaf45d6970aa6050c
     leftVic1.Set(0.5);
     leftVic2.Set(0.5);
     rightVic2.Set(-0.5);
@@ -46,6 +59,7 @@ class MyRobot : public IterativeRobot {
     leftVic2.Set(0.0);
     rightVic1.Set(0.0);
     rightVic2.Set(0.0);
+<<<<<<< HEAD
     }
   }
   void TeleopInit(){
@@ -60,6 +74,15 @@ class MyRobot : public IterativeRobot {
     leftVic2.Set(speedStick.GetY());
     rightVic1.Set(-speedStick.GetY());
     rightVic2.Set(-speedStick.GetY());
+=======
+    
+    Wait(2.0);
+    
+    leftVic1.Set(-0.3);
+    leftVic2.Set(-0.3);
+    rightVic1.Set(-0.3);
+    rightVic2.Set(-0.3;)
+>>>>>>> 0cbaf8c330fa68e95d389bafaf45d6970aa6050c
   }
   
 };
